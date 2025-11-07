@@ -29,3 +29,15 @@ e = e - f; // e: is now (130-60) 70
 console.log(`e:${e}`, `f:${f}`);
 
 
+// when we add a number with String it concatanate the String with number and the result is String
+const number = 34;
+const result = number + "2";
+console.log("result is :", typeof result);
+
+// typeof object
+console.log("type of an array is: ", typeof [4, 5, 6, 6]);
+console.log("type of undifined is:", undefined);
+console.log("type of a class is:", typeof class { });
+console.log("type of null is:", typeof null);
+console.log("type of NaN is:", typeof NaN);
+console.log("type of an object is an object:");
