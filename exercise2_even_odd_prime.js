@@ -23,7 +23,20 @@ const findEven = (array) => {
 console.log("Even Numbers:", findEven([3, 4, 5, 6, 7, 8]));
 
 
-
+// figure out the prime number
+    let number=32
+    let isPrime = true;
+    if(number < 2) {
+    isPrime = false
+   }else {
+        for (let i = 2; i <= Math.sqrt(number); i++){
+            if (number % i === 0) {
+                isPrime = false;
+                break
+            }
+        }
+    }
+console.log(isPrime ? "prime Number" : "not prime");
 
 
 
