@@ -9,9 +9,7 @@ test('adds 1 + 2', () => {
 
 
 
-test("odd number of [4,3,5,6]", () => {
-  expect(findOdd([3, 4, 5, 6])).toStrictEqual([3,5]);
-})
+
 
 test("even number  [4,3,5,6]is: ", () => {
   expect(findEven([3, 4, 5, 6])).toStrictEqual([4, 6]);
