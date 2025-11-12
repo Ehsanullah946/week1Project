@@ -1,3 +1,4 @@
+
 const findOdd = (array) => {
     let result = [];
     for (let i = 0; i < array.length; i++){
@@ -7,9 +8,6 @@ const findOdd = (array) => {
     }
     return result;
 }
-console.log("odd numbers:",findOdd([3, 5, 6, 7, 8]));
-
-
 
 const findEven = (array) => {
     let result = [];
@@ -20,27 +18,19 @@ const findEven = (array) => {
     }
       return result;
 }
-console.log("Even Numbers:", findEven([3, 4, 5, 6, 7, 8]));
-
 
 // figure out the prime number
-    let number=32
-    let isPrime = true;
-    if(number < 2) {
-    isPrime = false
-   }else {
-        for (let i = 2; i <= Math.sqrt(number); i++){
-            if (number % i === 0) {
-                isPrime = false;
-                break
-            }
-        }
+const isPrime = (number) => {
+  if (number < 2) return false;
+  for (let i = 2; i <= Math.sqrt(number); i++) {
+    if (number % i === 0) {
+      return false;
     }
-console.log(isPrime ? "prime Number" : "not prime");
+  }
+  return true;
+};
 
-
-
-
+module.exports ={findOdd, findEven,isPrime}
 
 
 
